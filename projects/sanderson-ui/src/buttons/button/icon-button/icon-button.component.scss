@@ -1,0 +1,26 @@
+:host {
+  align: {
+    items: center;
+  }
+  background: {
+    color: var(--icon-button-background-color, #7f6bf8);
+  }
+  border: {
+    radius: 9999px
+  }
+  cursor: pointer;
+  display: inline-flex;
+  filter: saturate(1);
+  height: 38px;
+  padding: 10px;
+  transition: {
+    duration: 500ms;
+    property: filter;
+    timing-function: ease;
+  }
+  width: 38px;
+
+  &:focus, &:hover {
+    filter: saturate(2.5);
+  }
+}

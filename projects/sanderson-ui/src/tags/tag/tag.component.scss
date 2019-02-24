@@ -1,0 +1,22 @@
+:host{
+  background:{
+    color: #f0f0f0;
+  }
+  border:{
+    radius: 9999px;
+  }
+  display: block;
+  padding: 6px 16px;
+
+  .label{
+    &-title{
+      color: #a0a0a0;
+      cursor: default;
+      display: block;
+      font:{
+        size: 13px;
+        weight: lighter;
+      }
+    }
+  }
+}

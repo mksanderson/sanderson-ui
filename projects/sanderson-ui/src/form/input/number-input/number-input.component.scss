@@ -1,0 +1,58 @@
+:host {
+  align: {
+    items: center;
+  }
+  display: grid;
+  grid: {
+    row: {
+      gap: 4px;
+    }
+  }
+
+  .input {
+    display: grid;
+
+    &-control {
+      appearance: none;
+      background: {
+        color: #f0f0f0;
+      }
+      border: {
+        radius: 4px;
+        width: 0;
+      }
+      font: {
+        size: 16px;
+      }
+      line: {
+        height: 16px;
+      }
+      outline: none;
+      padding: 12px;
+      transition: {
+        duration: 500ms;
+        property: background-color;
+      }
+
+      &::placeholder{
+        opacity: 0.25;
+      }
+
+      &:not(:active) {
+        background: {
+          color: rgba(#f0f0f0, 0.55);
+        }
+      }
+    }
+  }
+
+  .label {
+    &-title {
+      display: block;
+      font: {
+        size: 12px;
+        weight: bold;
+      }
+    }
+  }
+}

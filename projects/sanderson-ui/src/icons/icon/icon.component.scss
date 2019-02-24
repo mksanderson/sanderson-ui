@@ -1,0 +1,23 @@
+:host {
+  align: {
+    items: center;
+  }
+  color: var(--icon-color);
+  display: inline-flex;
+  font: {
+    family: 'Material Icons';
+    size: var(--icon-font-size);
+  }
+  line: {
+    height: 1;
+  }
+  justify: {
+    content: center;
+  }
+  overflow: hidden;
+  transition: {
+    duration: 500ms;
+    property: color;
+    timing-function: ease;
+  }
+}

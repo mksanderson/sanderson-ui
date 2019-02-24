@@ -1,0 +1,17 @@
+:host {
+  align: {
+    items: center;
+  }
+  display: grid;
+  grid: {
+    auto: {
+      flow: column;
+    }
+    column: {
+      gap: 12px;
+    }
+  }
+  justify: {
+    content: var(--buttons-justify-content, end);
+  }
+}

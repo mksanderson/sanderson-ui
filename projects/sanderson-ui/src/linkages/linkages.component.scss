@@ -1,0 +1,30 @@
+@import "../breakpoints/breakpoint/breakpoint";
+
+:host {
+  display: grid;
+
+  @media(min-width: breakpoint(medium, min)) {
+    grid: {
+      auto: {
+        flow: row;
+      }
+      row: {
+        gap: 48px;
+      }
+    }
+  }
+
+  @media(max-width: breakpoint(small, max)) {
+    grid: {
+      auto: {
+        flow: column;
+      }
+      column: {
+        gap: 48px;
+      }
+    }
+    justify: {
+      content: space-between;
+    }
+  }
+}

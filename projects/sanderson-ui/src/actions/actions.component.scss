@@ -1,0 +1,14 @@
+:host {
+  align: {
+    items: center;
+  }
+  display: grid;
+  grid: {
+    auto: {
+      flow: column;
+    }
+    column: {
+      gap: 8px;
+    }
+  }
+}

@@ -1,0 +1,27 @@
+:host {
+  --icon-color: rgba(255, 255, 255, 0.25);
+  --icon-font-size: 24px;
+
+  align: {
+    items: center;
+  }
+  cursor: pointer;
+  display: flex;
+  justify: {
+    content: center;
+  }
+
+  &:not(.active) {
+    &:hover {
+      --icon-color: rgba(255, 255, 255, 0.95);
+    }
+  }
+
+  &.active {
+    --icon-color: rgba(255, 255, 255, 1);
+  }
+
+  .media {
+    display: flex;
+  }
+}

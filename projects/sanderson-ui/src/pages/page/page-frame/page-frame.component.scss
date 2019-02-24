@@ -1,0 +1,53 @@
+@import "../../../breakpoints/breakpoint/breakpoint";
+
+:host {
+  align: {
+    content: start;
+  }
+  background: {
+    color: #435388;
+  }
+  display: grid;
+  left: 0;
+  padding: 22px;
+  position: sticky;
+
+  @media(min-width: breakpoint(medium, min)) {
+    grid: {
+      auto: {
+        flow: row;
+      }
+      row: {
+        gap: 48px;
+      }
+    }
+    height: 100vh;
+    order: 0;
+    top: 0;
+  }
+
+  @media(max-width: breakpoint(small, max)) {
+    backdrop:{
+      filter: blur(18px);
+    }
+    background: {
+      color: rgba(#435388, 0.95);
+    }
+    bottom: 0;
+    grid: {
+      auto: {
+        flow: column;
+      }
+      column: {
+        gap: 12px;
+      }
+      template: {
+        columns: 1fr;
+      }
+    }
+    justify: {
+      content: space-between;
+    }
+    right: 0;
+  }
+}

@@ -1,0 +1,73 @@
+:host {
+  display: flex;
+  overflow: auto;
+
+  table {
+    border: {
+      collapse: collapse;
+    }
+    width: 100%;
+
+    tbody {
+      tr {
+        &:not(:last-child) {
+          border: {
+            bottom: {
+              color: #f0f0f0;
+              style: solid;
+              width: 1px;
+            }
+          }
+        }
+
+        td {
+          font: {
+            size: 14px;
+          }
+          padding: 16px;
+          overflow: hidden;
+          text: {
+            overflow: ellipsis;
+          }
+          white: {
+            space: nowrap;
+          }
+        }
+      }
+    }
+
+    thead {
+      &:not(:last-child) {
+        border: {
+          bottom: {
+            color: #f0f0f0;
+            style: solid;
+            width: 1px;
+          }
+        }
+      }
+
+      th {
+        font: {
+          size: 14px;
+          weight: bold;
+        }
+        padding: 16px;
+        text: {
+          align: left;
+        }
+      }
+    }
+
+    img {
+      border: {
+        radius: 9999px;
+      }
+      height: 48px;
+      min: {
+        width: initial;
+      }
+      width: 48px;
+    }
+  }
+}

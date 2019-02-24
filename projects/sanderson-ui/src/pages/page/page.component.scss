@@ -1,0 +1,27 @@
+@import "../../breakpoints/breakpoint/breakpoint";
+
+:host {
+  background: {
+    color: #f9f9f9;
+  }
+  display: grid;
+  height: 100vh;
+  overflow-scrolling: touch;
+  scroll-behavior: smooth;
+
+  @media(min-width: breakpoint(medium, min)) {
+    grid: {
+      template: {
+        columns: min-content 1fr min-content;
+      }
+    }
+  }
+
+  @media(max-width: breakpoint(small, max)) {
+    grid: {
+      template: {
+        rows: 1fr min-content;
+      }
+    }
+  }
+}

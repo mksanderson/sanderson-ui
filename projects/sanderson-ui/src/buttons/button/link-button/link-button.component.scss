@@ -1,0 +1,30 @@
+:host {
+  .label {
+    &-title {
+      color: #7f6bf8;
+      display: block;
+      font: {
+        size: 13px;
+        weight: bold;
+      }
+      text: {
+        decoration: none;
+      }
+      transition: {
+        duration: 250ms;
+        property: filter;
+        timing-function: ease-in-out;
+      }
+
+      &:focus {
+        text: {
+          decoration: underline;
+        }
+      }
+
+      &:focus, &:hover {
+        filter: brightness(1.2);
+      }
+    }
+  }
+}

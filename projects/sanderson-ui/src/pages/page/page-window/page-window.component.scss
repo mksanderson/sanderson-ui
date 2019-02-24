@@ -1,0 +1,20 @@
+@import "../../../breakpoints/breakpoint/breakpoint";
+
+:host {
+  display: grid;
+  grid: {
+    template: {
+      rows: min-content 1fr;
+    }
+  }
+
+  @media(min-width: breakpoint(medium, min)) {
+    order: 1;
+  }
+
+  @media(max-width: breakpoint(small, max)) {
+    min: {
+      height: 100vh;
+    }
+  }
+}

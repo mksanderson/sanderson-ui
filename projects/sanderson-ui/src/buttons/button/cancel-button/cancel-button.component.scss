@@ -1,0 +1,34 @@
+:host {
+  align: {
+    items: center;
+  }
+  background: {
+    color: var(--cancel-button-background-color, #d0d0d0);
+  }
+  border: {
+    radius: 4px;
+  }
+  cursor: pointer;
+  display: inline-flex;
+  filter: saturate(1);
+  padding: 10px 22px;
+  transition: {
+    duration: 500ms;
+    property: filter;
+    timing-function: ease;
+  }
+
+  &:focus, &:hover{
+    filter: saturate(2.5);
+  }
+
+  .label {
+    &-title {
+      color: var(--cancel-button-color, #fff);
+      display: block;
+      font: {
+        size: 16px;
+      }
+    }
+  }
+}

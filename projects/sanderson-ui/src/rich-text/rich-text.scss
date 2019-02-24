@@ -1,0 +1,32 @@
+@mixin rich-text {
+  font: {
+    size: 13px;
+  }
+
+  a {
+    color: #7f6bf8;
+    font: {
+      weight: bold;
+    }
+    text: {
+      decoration: none;
+    }
+    transition: {
+      duration: 250ms;
+      property: filter;
+      timing-function: ease-in-out;
+    }
+
+    &:hover {
+      filter: brightness(1.2);
+    }
+  }
+
+  p {
+    &:not(:last-child) {
+      margin: {
+        bottom: 18px;
+      }
+    }
+  }
+}
