@@ -1,8 +1,11 @@
-import {Component, HostBinding, Input} from "@angular/core";
+import {Component, Input} from "@angular/core";
 
 @Component({
   selector: "icon",
-  styleUrls: ["./icon.component.scss"],
+  styleUrls: [
+    './icon.theme.scss',
+    './icon.component.scss'
+  ],
   templateUrl: "./icon.component.html"
 })
 export class IconComponent {

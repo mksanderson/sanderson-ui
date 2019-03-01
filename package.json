@@ -5,7 +5,7 @@
     "build": "ng build --prod sanderson-ui",
     "package": "npm run build && npm run prepare",
     "prepare": "cd dist/sanderson-ui && npm pack",
-    "publish": "cd dist/sanderson-ui && npm publish",
+    "publish": "cd projects/sanderson-ui && npm version patch && cd ../../ && npm run package && cd dist/sanderson-ui && npm publish",
     "start": "ng serve"
   },
   "private": true,

@@ -1,5 +1,3 @@
-@import "icon.theme";
-
 :host {
   align: {
     items: center;
@@ -21,5 +19,8 @@
     duration: 500ms;
     property: color;
     timing-function: ease;
+  }
+  user: {
+    select: none;
   }
 }

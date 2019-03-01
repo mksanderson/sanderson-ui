@@ -2,8 +2,11 @@ import {Component, HostBinding, Input, OnInit} from '@angular/core';
 
 @Component({
   selector: 'action',
-  templateUrl: './action.component.html',
-  styleUrls: ['./action.component.scss']
+  styleUrls: [
+    './action.theme.scss',
+    './action.component.scss'
+  ],
+  templateUrl: './action.component.html'
 })
 export class ActionComponent {
   @Input() @HostBinding('class.active') public active: boolean;
