@@ -1,9 +1,13 @@
+@import "action.theme";
+
 :host {
+  --icon-color: var(--action-icon-color);
+
   align: {
     items: center;
   }
   background: {
-    color: #7f6bf8;
+    color: var(--action-background-color);
   }
   border: {
     radius: 9999px;
@@ -17,7 +21,7 @@
   transition: {
     duration: 500ms;
     property: transform;
-    timing-function: cubic-bezier(0.87,-0.41,0.19,1.44);
+    timing-function: cubic-bezier(0.87, -0.41, 0.19, 1.44);
   }
   width: 26px;
 
