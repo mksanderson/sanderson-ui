@@ -26,7 +26,7 @@
   }
 
   &.active{
-    --active-icon-color: var(--active-action-icon-color);
+    --icon-color: var(--active-action-icon-color);
     background: {
       color: var(--active-action-background-color);
     }
