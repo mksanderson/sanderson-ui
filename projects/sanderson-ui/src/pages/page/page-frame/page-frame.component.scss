@@ -5,12 +5,16 @@
     content: start;
   }
   background: {
-    color: #435388;
+    color: var(--page-frame-background-color);
   }
   display: grid;
   left: 0;
   padding: 22px;
   position: sticky;
+
+  &:empty {
+    display: none;
+  }
 
   @media(min-width: breakpoint(medium, min)) {
     grid: {
@@ -27,11 +31,8 @@
   }
 
   @media(max-width: breakpoint(small, max)) {
-    backdrop:{
+    backdrop: {
       filter: blur(18px);
-    }
-    background: {
-      color: rgba(#435388, 0.95);
     }
     bottom: 0;
     grid: {

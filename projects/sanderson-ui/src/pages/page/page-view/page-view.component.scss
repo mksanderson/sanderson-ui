@@ -1,5 +1,5 @@
 :host {
-  display: block;
+  display: grid;
   overflow: hidden;
-  padding: 22px;
+  padding: var(--page-view-padding);
 }

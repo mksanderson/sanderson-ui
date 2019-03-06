@@ -1,4 +1,8 @@
-:host{
+:host {
   display: block;
   padding: 22px;
+
+  &:empty {
+    display: none;
+  }
 }
