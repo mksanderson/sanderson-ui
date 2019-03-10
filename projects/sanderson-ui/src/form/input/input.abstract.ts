@@ -4,7 +4,7 @@ import {ControlValueAccessor} from "@angular/forms";
 export class AbstractInput implements ControlValueAccessor {
   @Input() public placeholder: string;
   @Input() public title: string;
-  private _value: any;
+  public _value: any;
 
   get value() {
     return this._value;

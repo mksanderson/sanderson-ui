@@ -15,5 +15,5 @@ import {NG_VALUE_ACCESSOR} from "@angular/forms";
   templateUrl: './switch-input.component.html'
 })
 export class SwitchInputComponent extends AbstractInput {
-  @HostBinding('class.checked') protected _value: boolean;
+  @HostBinding('class.checked') public _value: boolean;
 }

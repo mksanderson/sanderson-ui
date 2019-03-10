@@ -7,7 +7,7 @@ import {FormControl, FormGroup} from "@angular/forms";
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  public formGroup: FormGroup
+  public formGroup: FormGroup;
 
   constructor(){
     this.formGroup = new FormGroup({
