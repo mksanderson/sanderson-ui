@@ -1,0 +1,76 @@
+:host {
+  .control {
+    &-input {
+
+    }
+  }
+
+  .label {
+    border: {
+      color: #f0f0f0;
+      radius: 9999px;
+      style: solid;
+      width: 1px;
+    }
+    cursor: pointer;
+    display: inline-block;
+    height: 22px;
+    position: relative;
+    transition: {
+      duration: 450ms;
+      property: background;
+      timing-function: ease-in-out;
+    }
+    width: 44px;
+
+    &:before {
+      border: {
+        radius: 9999px;
+      }
+      box: {
+        shadow: 0 0 0px 6px rgba(#007dff, 0.15);
+      }
+      content: '';
+      height: 22px;
+      position: absolute;
+      transition: {
+        duration: 450ms;
+        property: background, box-shadow, transform;
+        timing-function: ease-in-out
+      }
+      top: 0;
+      width: 22px;
+    }
+  }
+
+  &.checked {
+    .label {
+      background: {
+        color: #007dff;
+      }
+
+      &:before {
+        background: #ffffff;
+        box: {
+          shadow: 0 0 0px 6px rgba(#ffffff, 0.15);
+        }
+        transform: translateX(100%);
+      }
+    }
+  }
+
+  &:not(.checked) {
+    .label {
+      background: {
+        color: #ffffff;
+      }
+
+      &:before {
+        background: #007dff;
+        box: {
+          shadow: 0 0 0px 6px rgba(#007dff, 0.15);
+        }
+      }
+    }
+  }
+}

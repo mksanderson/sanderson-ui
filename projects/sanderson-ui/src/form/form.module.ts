@@ -12,6 +12,8 @@ import {FormButtonsComponent} from './form-buttons/form-buttons.component';
 import {ButtonsModule} from '../buttons/buttons.module';
 import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {PasswordInputComponent} from './input/password-input/password-input.component';
+import { SwitchInputComponent } from './input/switch-input/switch-input.component';
+import { SliderInputComponent } from './input/slider-input/slider-input.component';
 
 @NgModule({
   declarations: [
@@ -22,7 +24,9 @@ import {PasswordInputComponent} from './input/password-input/password-input.comp
     NumberInputComponent,
     SelectInputComponent,
     TextInputComponent,
-    PasswordInputComponent
+    PasswordInputComponent,
+    SwitchInputComponent,
+    SliderInputComponent
   ],
   exports: [
     FormComponent,
@@ -33,7 +37,9 @@ import {PasswordInputComponent} from './input/password-input/password-input.comp
     PasswordInputComponent,
     SelectInputComponent,
     ReactiveFormsModule,
-    TextInputComponent
+    TextInputComponent,
+    SliderInputComponent,
+    SwitchInputComponent
   ],
   imports: [
     ActionsModule,

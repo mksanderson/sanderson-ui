@@ -35,6 +35,5 @@ export class AbstractInput implements ControlValueAccessor {
 
   public writeValue(value: any): void {
     this._value = value;
-    console.log(value);
   }
 }

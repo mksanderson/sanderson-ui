@@ -1,0 +1,57 @@
+:host {
+  .control {
+    &-input {
+      align: {
+        items: center;
+      }
+      appearance: none;
+      background: {
+        color: transparent;
+      }
+      height: 16px;
+      display: grid;
+      justify: {
+        content: center;
+      }
+      width: 100%;
+
+      &:focus, &:hover {
+        outline: none;
+
+        &::-webkit-slider-thumb {
+          box: {
+            shadow: 0 0 0 8px rgba(#007dff, 0.25);
+          }
+        }
+      }
+
+      &::-webkit-slider-runnable-track {
+        background: {
+          color: #007dff;
+        }
+        border: {
+          radius: 9999px;
+        }
+        height: 2px;
+      }
+
+      &::-webkit-slider-thumb {
+        appearance: none;
+        background: {
+          color: #007dff;
+        }
+        box: {
+          shadow: 0 0 0 6px rgba(#007dff, 0.25);
+        }
+        border: {
+          radius: 9999px;
+        }
+        cursor: pointer;
+        height: 14px;
+        transform: translateY(-50%);
+        transition: box-shadow 450ms ease;
+        width: 14px;
+      }
+    }
+  }
+}

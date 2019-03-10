@@ -1,0 +1,29 @@
+<page>
+  <page-frame>
+    <linkages>
+      <linkage>
+        <icon [name]="'toys'"></icon>
+      </linkage>
+    </linkages>
+  </page-frame>
+  <page-window>
+    <page-view>
+      <form [formGroup]="formGroup">
+        <form-fields>
+          <form-field>
+            Value {{formGroup.get('slider').value}}
+            <slider-input formControlName="slider"></slider-input>
+          </form-field>
+          <form-field>
+            Value {{formGroup.get('switch').value}}
+            <switch-input formControlName="switch"></switch-input>
+          </form-field>
+          <form-field>
+            Value {{formGroup.get('text').value}}
+            <text-input formControlName="text"></text-input>
+          </form-field>
+        </form-fields>
+      </form>
+    </page-view>
+  </page-window>
+</page>
