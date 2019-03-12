@@ -1,7 +1,7 @@
 :host {
   .control {
     &-input {
-
+      display: none;
     }
   }
 
@@ -14,14 +14,14 @@
     }
     cursor: pointer;
     display: inline-block;
-    height: 22px;
+    height: 25px;
     position: relative;
     transition: {
       duration: 450ms;
       property: background;
       timing-function: ease-in-out;
     }
-    width: 44px;
+    width: 45px;
 
     &:before {
       border: {
@@ -31,15 +31,15 @@
         shadow: 0 0 0px 6px rgba(#007dff, 0.15);
       }
       content: '';
-      height: 22px;
+      height: 21px;
       position: absolute;
       transition: {
         duration: 450ms;
         property: background, box-shadow, transform;
         timing-function: ease-in-out
       }
-      top: 0;
-      width: 22px;
+      top: 1px;
+      width: 21px;
     }
   }
 
