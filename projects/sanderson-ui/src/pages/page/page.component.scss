@@ -7,7 +7,10 @@
   display: grid;
   height: 100vh;
   overflow-scrolling: touch;
-  scroll-behavior: smooth;
+  overflow: hidden;
+  scroll: {
+    behavior: smooth;
+  }
 
   @media(min-width: breakpoint(medium, min)) {
     grid: {

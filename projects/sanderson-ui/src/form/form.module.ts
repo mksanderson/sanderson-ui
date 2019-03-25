@@ -14,9 +14,11 @@ import {FormsModule, ReactiveFormsModule} from '@angular/forms';
 import {PasswordInputComponent} from './input/password-input/password-input.component';
 import { SwitchInputComponent } from './input/switch-input/switch-input.component';
 import { SliderInputComponent } from './input/slider-input/slider-input.component';
+import { EmailInputComponent } from './input/email-input/email-input.component';
 
 @NgModule({
   declarations: [
+    EmailInputComponent,
     FormComponent,
     FormButtonsComponent,
     FormFieldComponent,
@@ -29,6 +31,7 @@ import { SliderInputComponent } from './input/slider-input/slider-input.componen
     SliderInputComponent
   ],
   exports: [
+    EmailInputComponent,
     FormComponent,
     FormButtonsComponent,
     FormFieldComponent,
