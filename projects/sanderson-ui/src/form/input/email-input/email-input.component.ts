@@ -1,4 +1,4 @@
-import {Component, forwardRef, OnInit} from '@angular/core';
+import {Component, forwardRef} from '@angular/core';
 import {AbstractInput} from "../input.abstract";
 import {NG_VALUE_ACCESSOR} from "@angular/forms";
 

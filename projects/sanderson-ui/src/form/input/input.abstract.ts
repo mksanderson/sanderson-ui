@@ -3,6 +3,7 @@ import {ControlValueAccessor} from "@angular/forms";
 
 export class AbstractInput implements ControlValueAccessor {
   @Input() public placeholder: string;
+  @Input() public required: boolean;
   @Input() public title: string;
   public _value: any;
 
