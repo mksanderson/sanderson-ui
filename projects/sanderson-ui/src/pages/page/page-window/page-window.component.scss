@@ -2,13 +2,4 @@
 
 :host {
   display: grid;
-
-  @media(min-width: breakpoint(medium, min)) {
-    grid: {
-      template: {
-        rows: min-content 1fr;
-      }
-    }
-    order: 1;
-  }
 }

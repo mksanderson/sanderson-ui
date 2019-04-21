@@ -6,25 +6,14 @@
   }
   display: grid;
   height: 100vh;
+  grid: {
+    template: {
+      rows: 1fr min-content;
+    }
+  }
   overflow-scrolling: touch;
   overflow: hidden;
   scroll: {
     behavior: smooth;
-  }
-
-  @media(min-width: breakpoint(medium, min)) {
-    grid: {
-      template: {
-        columns: min-content 1fr min-content;
-      }
-    }
-  }
-
-  @media(max-width: breakpoint(small, max)) {
-    grid: {
-      template: {
-        rows: 1fr min-content;
-      }
-    }
   }
 }

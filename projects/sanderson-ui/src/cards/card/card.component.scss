@@ -1,0 +1,18 @@
+:host {
+  background: {
+    color: var(--card-background-color);
+  }
+  border: {
+    radius: 2px;
+  }
+  display: grid;
+  grid: {
+    row: {
+      gap: 12px;
+    }
+  }
+  padding: 24px;
+  user: {
+    select: none;
+  }
+}

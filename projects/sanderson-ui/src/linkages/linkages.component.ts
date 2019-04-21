@@ -6,16 +6,10 @@ import {LinkageComponent} from "./linkage/linkage.component";
   styleUrls: ["./linkages.component.scss"],
   templateUrl: "./linkages.component.html"
 })
-export class LinkagesComponent implements AfterContentInit {
+export class LinkagesComponent {
   @ContentChildren(LinkageComponent) public linkages: QueryList<LinkageComponent>;
 
   constructor() {
     this.linkages = new QueryList<LinkageComponent>();
-  }
-
-  ngAfterContentInit(): void {
-    // Example to demo the first linkage being active
-    // TODO: Remove
-    this.linkages.first.active = true;
   }
 }

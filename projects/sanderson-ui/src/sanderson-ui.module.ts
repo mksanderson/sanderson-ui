@@ -9,11 +9,13 @@ import {EntriesModule} from './entries/entries.module';
 import {ButtonsModule} from './buttons/buttons.module';
 import {LinkagesModule} from './linkages/linkages.module';
 import {LoadersModule} from './loaders/loaders.module';
+import {CardsModule} from "./cards/cards.module";
 
 @NgModule({
   exports: [
     ActionsModule,
     ButtonsModule,
+    CardsModule,
     EntriesModule,
     FormModule,
     GridsModule,
@@ -26,6 +28,7 @@ import {LoadersModule} from './loaders/loaders.module';
   imports: [
     ActionsModule,
     ButtonsModule,
+    CardsModule,
     EntriesModule,
     FormModule,
     GridsModule,

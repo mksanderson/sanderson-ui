@@ -1,4 +1,8 @@
 :host {
+  touch: {
+    action: pan-x;
+  }
+
   .control {
     &-input {
       align: {
