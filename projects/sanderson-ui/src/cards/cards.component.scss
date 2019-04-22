@@ -43,12 +43,20 @@
   }
 
   .label {
+    &:empty {
+      display: none;
+    }
+
     &-title {
       color: var(--cards-title-color);
       display: block;
-      font:{
+      font: {
         size: 24px;
         weight: lighter;
+      }
+
+      &:empty {
+        display: none;
       }
     }
   }

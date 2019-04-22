@@ -27,9 +27,14 @@
   justify: {
     content: space-between;
   }
-  position: fixed;
+  position: sticky;
   right: 0;
-  padding: 22px;
+  padding: {
+    bottom: calc(22px + env(safe-area-inset-bottom));
+    left: 22px;
+    right: 22px;
+    top: 22px;
+  }
 
   &:empty {
     display: none;

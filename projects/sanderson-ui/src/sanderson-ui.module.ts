@@ -37,6 +37,6 @@ import {CardsModule} from "./cards/cards.module";
     LoadersModule,
     PagesModule,
     TagsModule
-  ],
+  ]
 })
 export class SandersonUIModule { }
