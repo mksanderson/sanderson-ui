@@ -9,5 +9,9 @@ import {Component} from '@angular/core';
   templateUrl: './page.component.html'
 })
 export class PageComponent {
+  public loaded: boolean;
 
+  constructor() {
+    this.loaded = false;
+  }
 }

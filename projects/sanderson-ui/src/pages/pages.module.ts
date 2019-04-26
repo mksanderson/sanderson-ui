@@ -6,6 +6,9 @@ import {PageMastheadComponent} from './page/page-masthead/page-masthead.componen
 import {PageViewComponent} from './page/page-view/page-view.component';
 import {PageWindowComponent} from './page/page-window/page-window.component';
 import {IconsModule} from '../icons/icons.module';
+import {PageService} from './page/page.service';
+import {CommonModule} from '@angular/common';
+import {LoadersModule} from '../loaders/loaders.module';
 
 @NgModule({
   declarations: [
@@ -25,7 +28,13 @@ import {IconsModule} from '../icons/icons.module';
     PageWindowComponent
   ],
   imports: [
-    IconsModule
+    CommonModule,
+    IconsModule,
+    LoadersModule
+  ],
+  providers: [
+    PageService
   ]
 })
-export class PagesModule { }
+export class PagesModule {
+}
