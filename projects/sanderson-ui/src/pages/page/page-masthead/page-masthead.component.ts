@@ -1,4 +1,4 @@
-import {Component} from "@angular/core";
+import {Component, Input} from "@angular/core";
 
 @Component({
   selector: "page-masthead",
@@ -6,5 +6,5 @@ import {Component} from "@angular/core";
   templateUrl: "./page-masthead.component.html"
 })
 export class PageMastheadComponent {
-
+  @Input() public title: string;
 }

@@ -1,5 +1,8 @@
 @import "../../../breakpoints/breakpoint/breakpoint";
 
 :host {
+  align: {
+    content: start;
+  }
   display: grid;
 }
