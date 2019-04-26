@@ -2,25 +2,36 @@
   align: {
     items: center;
   }
-  background: {
-    color: rgba(255, 255, 255, 0.75);
-  }
   backdrop: {
     filter: blur(18px);
   }
+  background: {
+    color: var(--page-masthead-background-color)
+  }
+  color: var(--page-masthead-color);
   display: grid;
-  grid: {
-    auto: {
-      flow: column;
-    }
-    column: {
-      gap: 24px;
-    }
-    template: {
-      columns: 1fr;
+  left: 0;
+  justify: {
+    content: center;
+  }
+  padding: {
+    bottom: 22px;
+    left: 22px;
+    right: 22px;
+    top: calc(22px + env(safe-area-inset-top));
+  }
+  position: sticky;
+  right: 0;
+  top: 0;
+
+  .label {
+    &-title {
+      color: inherit;
+      display: block;
+      font: {
+        size: 16px;
+        weight: bold;
+      }
     }
   }
-  padding: 22px;
-  position: sticky;
-  top: 0;
 }

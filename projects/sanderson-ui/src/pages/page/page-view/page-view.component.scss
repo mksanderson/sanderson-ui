@@ -1,5 +1,8 @@
 :host {
   display: grid;
-  overflow: hidden;
+  overflow: scroll;
   padding: var(--page-view-padding);
+  overflow: {
+    scrolling: touch;
+  }
 }
