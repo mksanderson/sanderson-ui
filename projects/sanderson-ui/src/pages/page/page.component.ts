@@ -1,4 +1,5 @@
-import {Component} from '@angular/core';
+import {Component, Input} from '@angular/core';
+import {PageService} from './page.service';
 
 @Component({
   selector: 'page',
@@ -9,9 +10,15 @@ import {Component} from '@angular/core';
   templateUrl: './page.component.html'
 })
 export class PageComponent {
-  public loaded: boolean;
+  @Input() public loading: boolean;
 
-  constructor() {
-    this.loaded = false;
+  constructor(private pageService: PageService) {
+    this.loading = true;
+  }
+
+  ngOnInit(): void {
+    this.pageService.loading$.subscribe((loading) => {
+      this.loading = loading;
+    });
   }
 }

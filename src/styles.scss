@@ -1,0 +1,44 @@
+@import "~normalize.css";
+
+html {
+  background: {
+    color: #000000;
+  }
+}
+
+:root {
+  --action-background-color: #dddddd;
+  --active-action-background-color: green;
+
+  --action-icon-color: #999999;
+  --active-action-icon-color: #ffffff;
+
+  --card-background-color: #101010;
+  --card-padding: 24px;
+
+  --page-background-color: #000000;
+
+  --page-frame-background-color: #000000;
+  --page-frame-border-top-color: #2a2a2a;
+
+  --page-masthead-background-color: rgba(0, 0, 0, 0.25);
+  --page-masthead-border-bottom-color: #2a2a2a;
+  --page-masthead-color: #ffffff;
+
+  --page-view-padding: 22px;
+
+  color: #ffffff;
+}
+
+* {
+  box: {
+    sizing: border-box;
+  }
+  font: {
+    family: 'Open Sans';
+  }
+
+  &:focus {
+    outline: none;
+  }
+}

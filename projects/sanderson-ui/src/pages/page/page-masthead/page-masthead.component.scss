@@ -8,6 +8,13 @@
   background: {
     color: var(--page-masthead-background-color)
   }
+  border: {
+    bottom: {
+      color: var(--page-masthead-border-bottom-color);
+      style: solid;
+      width: 1px;
+    }
+  }
   color: var(--page-masthead-color);
   display: grid;
   left: 0;
@@ -23,6 +30,7 @@
   position: sticky;
   right: 0;
   top: 0;
+  z-index: 10;
 
   .label {
     &-title {

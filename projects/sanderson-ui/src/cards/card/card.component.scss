@@ -11,7 +11,8 @@
       gap: 12px;
     }
   }
-  padding: 24px;
+  overflow: hidden;
+  padding: var(--card-padding);
   user: {
     select: none;
   }

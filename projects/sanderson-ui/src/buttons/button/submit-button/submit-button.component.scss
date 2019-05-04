@@ -2,11 +2,13 @@
   align: {
     items: center;
   }
+  appearance: none;
   background: {
     color: var(--action-button-background-color, #7f6bf8);
   }
   border: {
     radius: 4px;
+    width: 0;
   }
   cursor: pointer;
   display: inline-flex;
@@ -18,7 +20,7 @@
     timing-function: ease;
   }
 
-  &:focus, &:hover{
+  &:focus, &:hover {
     filter: saturate(2.5);
   }
 

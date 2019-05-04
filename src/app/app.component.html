@@ -1,4 +1,4 @@
-<page>
+<page [loading]="false">
   <page-frame>
     <linkages>
       <linkage>
@@ -7,30 +7,51 @@
     </linkages>
   </page-frame>
   <page-window>
+    <page-masthead [title]="'Styles'"></page-masthead>
     <page-view>
-      <cards [title]="'Cards'">
+      <h2>Buttons</h2>
+      <buttons>
+        <action-button [title]="'Action'"></action-button>
+        <cancel-button [title]="'Cancel'"></cancel-button>
+        <icon-button [title]="'Icon'">
+          <icon [name]="'power'"></icon>
+        </icon-button>
+        <link-button [link]="'http://www.google.com'" [title]="'Link'"></link-button>
+        <submit-button [title]="'Submit'"></submit-button>
+      </buttons>
+      <h2>Cards</h2>
+      <cards>
         <card>
           <card-content>
-            Test
+            <p>
+              Lorem ipsum dolar sit ahmet consector.
+            </p>
           </card-content>
         </card>
       </cards>
-      <form [formGroup]="formGroup">
-        <form-fields>
-          <form-field>
-            Value {{formGroup.get('slider').value}}
-            <slider-input formControlName="slider"></slider-input>
-          </form-field>
-          <form-field>
-            Value {{formGroup.get('switch').value}}
-            <switch-input formControlName="switch"></switch-input>
-          </form-field>
-          <form-field>
-            Value {{formGroup.get('text').value}}
-            <text-input formControlName="text"></text-input>
-          </form-field>
-        </form-fields>
-      </form>
+      <h2>Grids</h2>
+      <grid></grid>
+      <h2>Icons</h2>
+      <icons>
+        <icon [name]="'power'"></icon>
+        <icon [name]="'photo'"></icon>
+        <icon [name]="'phone'"></icon>
+        <icon [name]="'person'"></icon>
+        <icon [name]="'tablet'"></icon>
+      </icons>
+      <h2>Linkages</h2>
+      <linkages>
+        <linkage>
+          <icon [name]="'person'"></icon>
+        </linkage>
+        <linkage>
+          <icon [name]="'tablet'"></icon>
+        </linkage>
+      </linkages>
+      <h2>Tags</h2>
+      <tags>
+        <tag [title]="'Tag'"></tag>
+      </tags>
     </page-view>
   </page-window>
 </page>
