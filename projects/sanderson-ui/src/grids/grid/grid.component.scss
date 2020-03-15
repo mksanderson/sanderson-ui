@@ -1,73 +1,66 @@
 :host {
-  display: flex;
-  overflow: auto;
+    display: flex;
+    overflow: auto;
 
-  table {
-    border: {
-      collapse: collapse;
-    }
-    width: 100%;
-
-    tbody {
-      tr {
-        &:not(:last-child) {
-          border: {
-            bottom: {
-              color: #f0f0f0;
-              style: solid;
-              width: 1px;
-            }
-          }
+    table {
+        background: {
+            color: #2a2a2a;
         }
-
-        td {
-          font: {
-            size: 14px;
-          }
-          padding: 16px;
-          overflow: hidden;
-          text: {
-            overflow: ellipsis;
-          }
-          white: {
-            space: nowrap;
-          }
-        }
-      }
-    }
-
-    thead {
-      &:not(:last-child) {
         border: {
-          bottom: {
-            color: #f0f0f0;
-            style: solid;
-            width: 1px;
-          }
+            collapse: collapse;
         }
-      }
+        width: 100%;
 
-      th {
-        font: {
-          size: 14px;
-          weight: bold;
-        }
-        padding: 16px;
-        text: {
-          align: left;
-        }
-      }
-    }
+        tbody {
+            tr {
+                &:not(:last-child) {
+                    border: {
+                        bottom: {
+                            color: #262626;
+                            style: solid;
+                            width: 1px;
+                        }
+                    }
+                }
 
-    img {
-      border: {
-        radius: 9999px;
-      }
-      height: 48px;
-      min: {
-        width: initial;
-      }
-      width: 48px;
+                td {
+                    font: {
+                        size: 14px;
+                    }
+                    padding: 12px 24px;
+                    overflow: hidden;
+                    text: {
+                        overflow: ellipsis;
+                    }
+                    white: {
+                        space: nowrap;
+                    }
+                }
+            }
+        }
+
+        thead {
+            &:not(:last-child) {
+                border: {
+                    bottom: {
+                        color: #262626;
+                        style: solid;
+                        width: 1px;
+                    }
+                }
+            }
+
+            th {
+                color: #888;
+                font: {
+                    size: 13px;
+                    weight: bold;
+                }
+                padding: 16px 24px;
+                text: {
+                    align: left;
+                }
+            }
+        }
     }
-  }
 }

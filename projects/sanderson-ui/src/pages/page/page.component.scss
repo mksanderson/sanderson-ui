@@ -1,18 +1,20 @@
 @import "../../breakpoints/breakpoint/breakpoint";
 
 :host {
-  background: {
-    color: var(--page-background-color);
-  }
-  display: grid;
-  height: 100vh;
-  grid: {
-    template: {
-      rows: 1fr min-content;
+    background: {
+        color: var(--page-background-color);
     }
-  }
-  overflow-scrolling: touch;
-  scroll: {
-    behavior: smooth;
-  }
+    display: grid;
+    min: {
+        height: 100vh;
+    }
+    grid: {
+        template: {
+            rows: 1fr min-content;
+        }
+    }
+    overflow-scrolling: touch;
+    scroll: {
+        behavior: smooth;
+    }
 }

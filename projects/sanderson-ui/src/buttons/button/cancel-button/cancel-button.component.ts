@@ -2,7 +2,7 @@ import {Component, Input} from '@angular/core';
 import {AbstractButton} from '../abstract-button';
 
 @Component({
-  selector: 'cancel-button',
+  selector: 'sui-cancel-button',
   templateUrl: './cancel-button.component.html',
   styleUrls: ['./cancel-button.component.scss']
 })

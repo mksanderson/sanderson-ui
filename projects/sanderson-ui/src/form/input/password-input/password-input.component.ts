@@ -1,6 +1,6 @@
 import {Component, forwardRef} from '@angular/core';
-import {NG_VALUE_ACCESSOR} from "@angular/forms";
-import {AbstractInput} from "../input.abstract";
+import {NG_VALUE_ACCESSOR} from '@angular/forms';
+import {AbstractInput} from '../input.abstract';
 
 @Component({
   providers: [
@@ -10,7 +10,7 @@ import {AbstractInput} from "../input.abstract";
       useExisting: forwardRef(() => PasswordInputComponent)
     }
   ],
-  selector: 'password-input',
+  selector: 'sui-password-input',
   templateUrl: './password-input.component.html',
   styleUrls: ['./password-input.component.scss']
 })

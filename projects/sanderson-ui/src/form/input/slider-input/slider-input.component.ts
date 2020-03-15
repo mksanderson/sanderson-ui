@@ -1,6 +1,6 @@
 import {Component, forwardRef, Input, OnInit} from '@angular/core';
-import {NG_VALUE_ACCESSOR} from "@angular/forms";
-import {AbstractInput} from "../input.abstract";
+import {NG_VALUE_ACCESSOR} from '@angular/forms';
+import {AbstractInput} from '../input.abstract';
 
 @Component({
   providers: [
@@ -10,7 +10,7 @@ import {AbstractInput} from "../input.abstract";
       useExisting: forwardRef(() => SliderInputComponent)
     }
   ],
-  selector: 'slider-input',
+  selector: 'sui-slider-input',
   styleUrls: ['./slider-input.component.scss'],
   templateUrl: './slider-input.component.html'
 })

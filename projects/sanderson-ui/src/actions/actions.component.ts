@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'actions',
+  selector: 'sui-actions',
   templateUrl: './actions.component.html',
   styleUrls: ['./actions.component.scss']
 })

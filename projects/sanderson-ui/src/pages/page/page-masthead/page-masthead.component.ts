@@ -1,9 +1,9 @@
-import {Component, Input} from "@angular/core";
+import {Component, Input} from '@angular/core';
 
 @Component({
-  selector: "page-masthead",
-  styleUrls: ["./page-masthead.component.scss"],
-  templateUrl: "./page-masthead.component.html"
+  selector: 'sui-page-masthead',
+  styleUrls: ['./page-masthead.component.scss'],
+  templateUrl: './page-masthead.component.html'
 })
 export class PageMastheadComponent {
   @Input() public title: string;

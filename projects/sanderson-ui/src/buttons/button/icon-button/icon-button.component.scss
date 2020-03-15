@@ -11,6 +11,9 @@
   cursor: pointer;
   display: inline-flex;
   filter: saturate(1);
+  justify: {
+    content: center;
+  }
   height: 38px;
   padding: 10px;
   transition: {

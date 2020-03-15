@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'loader',
+  selector: 'sui-loader',
   templateUrl: './loader.component.html',
   styleUrls: ['./loader.component.scss']
 })

@@ -1,7 +1,7 @@
 import {Component, OnInit} from '@angular/core';
 
 @Component({
-  selector: 'form-field',
+  selector: 'sui-form-field',
   templateUrl: './form-field.component.html',
   styleUrls: ['./form-field.component.scss']
 })

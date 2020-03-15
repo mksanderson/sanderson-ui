@@ -1,5 +1,5 @@
-import {Input} from "@angular/core";
-import {ControlValueAccessor} from "@angular/forms";
+import {Input} from '@angular/core';
+import {ControlValueAccessor} from '@angular/forms';
 
 export class AbstractInput implements ControlValueAccessor {
   @Input() public placeholder: string;
@@ -18,10 +18,10 @@ export class AbstractInput implements ControlValueAccessor {
   }
 
   public onChange: any = () => {
-  };
+  }
 
   public onTouched: any = () => {
-  };
+  }
 
   public registerOnChange(fn: any): void {
     this.onChange = fn;

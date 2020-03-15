@@ -1,7 +1,7 @@
 import {Component, Input} from '@angular/core';
 
 @Component({
-  selector: 'tag',
+  selector: 'sui-tag',
   styleUrls: ['./tag.component.scss'],
   templateUrl: './tag.component.html'
 })

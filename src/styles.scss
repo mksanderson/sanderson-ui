@@ -1,33 +1,41 @@
 @import "~normalize.css";
 
 html {
-  background: {
-    color: #000000;
+  @media(prefers-color-scheme: dark) {
+    background: {
+      color: #2a2a2a;
+    }
+  }
+
+  @media(prefers-color-scheme: light) {
+    background: {
+      color: #ffffff;
+    }
   }
 }
 
 :root {
-  --action-background-color: #dddddd;
-  --active-action-background-color: green;
+  @media(prefers-color-scheme: dark) {
+    --action-background-color: #dddddd;
+    --active-action-background-color: green;
 
-  --action-icon-color: #999999;
-  --active-action-icon-color: #ffffff;
+    --action-icon-color: #999999;
+    --active-action-icon-color: #ffffff;
 
-  --card-background-color: #101010;
-  --card-padding: 24px;
+    --card-background-color: #101010;
+    --card-padding: 24px;
 
-  --page-background-color: #000000;
+    --page-background-color: #1a1a1a;
 
-  --page-frame-background-color: #000000;
-  --page-frame-border-top-color: #2a2a2a;
+    --page-frame-background-color: #1a1a1a;
 
-  --page-masthead-background-color: rgba(0, 0, 0, 0.25);
-  --page-masthead-border-bottom-color: #2a2a2a;
-  --page-masthead-color: #ffffff;
+    --page-masthead-background-color: #330072;
+    --page-masthead-color: #ffffff;
 
-  --page-view-padding: 22px;
+    --page-view-padding: 24px;
 
-  color: #ffffff;
+    color: #f9f9f9;
+  }
 }
 
 * {

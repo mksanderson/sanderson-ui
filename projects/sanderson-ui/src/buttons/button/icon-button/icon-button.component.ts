@@ -2,7 +2,7 @@ import {Component, ContentChild} from '@angular/core';
 import {IconComponent} from '../../../icons/icon/icon.component';
 
 @Component({
-  selector: 'icon-button',
+  selector: 'sui-icon-button',
   templateUrl: './icon-button.component.html',
   styleUrls: ['./icon-button.component.scss']
 })

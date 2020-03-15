@@ -1,7 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 
 @Component({
-  selector: 'form-buttons',
+  selector: 'sui-form-buttons',
   templateUrl: './form-buttons.component.html',
   styleUrls: ['./form-buttons.component.scss']
 })

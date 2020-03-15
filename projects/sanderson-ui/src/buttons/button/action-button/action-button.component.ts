@@ -3,7 +3,7 @@ import {AbstractButton} from '../abstract-button';
 import {IconComponent} from '../../../icons/icon/icon.component';
 
 @Component({
-  selector: 'action-button',
+  selector: 'sui-action-button',
   templateUrl: './action-button.component.html',
   styleUrls: ['./action-button.component.scss']
 })

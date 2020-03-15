@@ -1,6 +1,6 @@
 import {Component, forwardRef, HostBinding} from '@angular/core';
-import {AbstractInput} from "../input.abstract";
-import {NG_VALUE_ACCESSOR} from "@angular/forms";
+import {AbstractInput} from '../input.abstract';
+import {NG_VALUE_ACCESSOR} from '@angular/forms';
 
 @Component({
   providers: [
@@ -10,7 +10,7 @@ import {NG_VALUE_ACCESSOR} from "@angular/forms";
       useExisting: forwardRef(() => SwitchInputComponent)
     }
   ],
-  selector: 'switch-input',
+  selector: 'sui-switch-input',
   styleUrls: ['./switch-input.component.scss'],
   templateUrl: './switch-input.component.html'
 })

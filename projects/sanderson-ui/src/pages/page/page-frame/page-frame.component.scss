@@ -1,50 +1,43 @@
 @import "../../../breakpoints/breakpoint/breakpoint";
 
 :host {
-  align: {
-    content: start;
-  }
-  backdrop: {
-    filter: blur(18px);
-  }
-  background: {
-    color: var(--page-frame-background-color);
-  }
-  border: {
-    top: {
-      color: var(--page-frame-border-top-color);
-      style: solid;
-      width: 1px;
+    align: {
+        content: start;
     }
-  }
-  bottom: 0;
-  display: grid;
-  left: 0;
-  grid: {
-    auto: {
-      flow: column;
+    backdrop: {
+        filter: blur(18px);
     }
-    column: {
-      gap: 12px;
+    background: {
+        color: var(--page-frame-background-color);
     }
-    template: {
-      columns: 1fr;
+    bottom: 0;
+    display: grid;
+    left: 0;
+    grid: {
+        auto: {
+            flow: column;
+        }
+        column: {
+            gap: 12px;
+        }
+        template: {
+            columns: 1fr;
+        }
     }
-  }
-  justify: {
-    content: center;
-  }
-  position: sticky;
-  right: 0;
-  padding: {
-    bottom: calc(22px + env(safe-area-inset-bottom));
-    left: 22px;
-    right: 22px;
-    top: 22px;
-  }
-  z-index: 10;
+    justify: {
+        content: center;
+    }
+    position: sticky;
+    right: 0;
+    padding: {
+        bottom: calc(22px + env(safe-area-inset-bottom));
+        left: 22px;
+        right: 22px;
+        top: 22px;
+    }
+    z-index: 10;
 
-  &:empty {
-    display: none;
-  }
+    &:empty {
+        display: none;
+    }
 }

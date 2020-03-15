@@ -3,7 +3,7 @@ import {AbstractButton} from '../abstract-button';
 import {IconComponent} from '../../../icons/icon/icon.component';
 
 @Component({
-  selector: 'submit-button',
+  selector: 'sui-submit-button',
   templateUrl: './submit-button.component.html',
   styleUrls: ['./submit-button.component.scss']
 })

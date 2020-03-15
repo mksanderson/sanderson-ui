@@ -1,7 +1,7 @@
 import {Component, HostBinding, Input, OnInit} from '@angular/core';
 
 @Component({
-  selector: 'action',
+  selector: 'sui-action',
   styleUrls: [
     './action.theme.scss',
     './action.component.scss'

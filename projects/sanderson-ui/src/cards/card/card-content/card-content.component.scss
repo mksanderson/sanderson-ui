@@ -1,3 +1,16 @@
 :host {
-  overflow: hidden;
+    overflow: hidden;
+
+    ::ng-deep {
+        p {
+            font: {
+                size: 13px;
+            }
+            margin: 0;
+
+            &:last-child {
+
+            }
+        }
+    }
 }
