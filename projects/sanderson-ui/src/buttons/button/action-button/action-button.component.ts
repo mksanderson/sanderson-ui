@@ -8,5 +8,5 @@ import {IconComponent} from '../../../icons/icon/icon.component';
   styleUrls: ['./action-button.component.scss']
 })
 export class ActionButtonComponent extends AbstractButton {
-  @ContentChild(IconComponent) public icon: IconComponent;
+  @ContentChild(IconComponent, /* TODO: add static flag */ {}) public icon: IconComponent;
 }

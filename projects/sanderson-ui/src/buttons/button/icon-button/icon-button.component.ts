@@ -7,5 +7,5 @@ import {IconComponent} from '../../../icons/icon/icon.component';
   styleUrls: ['./icon-button.component.scss']
 })
 export class IconButtonComponent {
-  @ContentChild(IconComponent) public icon: IconComponent;
+  @ContentChild(IconComponent, /* TODO: add static flag */ {}) public icon: IconComponent;
 }
