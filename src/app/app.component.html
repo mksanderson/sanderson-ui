@@ -39,6 +39,14 @@
                 <sui-icon [name]="'person'"></sui-icon>
                 <sui-icon [name]="'tablet'"></sui-icon>
             </sui-icons>
+            <h2>Forms</h2>
+            <sui-form [formGroup]="formGroup">
+                <sui-form-fields>
+                    <sui-form-field>
+                        <sui-multiple-select-input [formControlName]="'destinations'" [options]="destinations"></sui-multiple-select-input>
+                    </sui-form-field>
+                </sui-form-fields>
+            </sui-form>
             <h2>Linkages</h2>
             <sui-linkages>
                 <sui-linkage>

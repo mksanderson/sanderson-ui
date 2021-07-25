@@ -1,0 +1,37 @@
+<label class="label">
+  <span class="label-title">
+    {{title}}
+  </span>
+</label>
+<div class="input">
+    <div class="input-control" [ngSwitch]="value.length > 0">
+        <div class="input-control-content">
+            <sui-chips *ngSwitchCase="true">
+                <sui-chip (click)="remove(option)" *ngFor="let option of value" [title]="option.title"></sui-chip>
+            </sui-chips>
+            <div class="input-control-content-placeholder" *ngSwitchDefault>
+                Select one or more destinations...
+            </div>
+        </div>
+        <div class="input-control-action" (click)="focus()" [ngSwitch]="focussed">
+            <sui-icon [name]="'expand_less'" *ngSwitchCase="true"></sui-icon>
+            <sui-icon [name]="'expand_more'" *ngSwitchDefault></sui-icon>
+        </div>
+    </div>
+    <input class="input-hidden" [(ngModel)]="value" [placeholder]="placeholder" [required]="required" type="hidden">
+</div>
+<sui-float [active]="focussed">
+    <sui-text-input [placeholder]="'Search destinations...'"></sui-text-input>
+    <div class="selections">
+        <div class="selection" (click)="toggle(option)" [ngClass]="{'selected': selected(option)}"
+             *ngFor="let option of options">
+            <div class="selection-action" [ngSwitch]="selected(option)">
+                <sui-icon [name]="'check_box'" *ngSwitchCase="true"></sui-icon>
+                <sui-icon [name]="'check_box_outline_blank'" *ngSwitchDefault></sui-icon>
+            </div>
+            <div class="selection-label">
+                {{option.title}}
+            </div>
+        </div>
+    </div>
+</sui-float>

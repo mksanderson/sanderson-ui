@@ -14,42 +14,53 @@ import {PasswordInputComponent} from './input/password-input/password-input.comp
 import {SwitchInputComponent} from './input/switch-input/switch-input.component';
 import {SliderInputComponent} from './input/slider-input/slider-input.component';
 import {EmailInputComponent} from './input/email-input/email-input.component';
+import {MultipleSelectInputComponent} from './input/multiple-select-input/multiple-select-input.component';
+import {CommonModule} from "@angular/common";
+import {TagsModule} from "../tags/tags.module";
+import {ChipsModule} from "../chips/chips.module";
+import {FloatsModule} from "../floats/floats.module";
 
 @NgModule({
-  declarations: [
-    EmailInputComponent,
-    FormComponent,
-    FormButtonsComponent,
-    FormFieldComponent,
-    FormFieldsComponent,
-    NumberInputComponent,
-    SelectInputComponent,
-    TextInputComponent,
-    PasswordInputComponent,
-    SwitchInputComponent,
-    SliderInputComponent
-  ],
-  exports: [
-    EmailInputComponent,
-    FormComponent,
-    FormButtonsComponent,
-    FormFieldComponent,
-    FormFieldsComponent,
-    NumberInputComponent,
-    PasswordInputComponent,
-    SelectInputComponent,
-    ReactiveFormsModule,
-    TextInputComponent,
-    SliderInputComponent,
-    SwitchInputComponent
-  ],
-  imports: [
-    ActionsModule,
-    ButtonsModule,
-    FormsModule,
-    IconsModule,
-    ReactiveFormsModule
-  ]
+    declarations: [
+        EmailInputComponent,
+        FormComponent,
+        FormButtonsComponent,
+        FormFieldComponent,
+        FormFieldsComponent,
+        MultipleSelectInputComponent,
+        NumberInputComponent,
+        SelectInputComponent,
+        TextInputComponent,
+        PasswordInputComponent,
+        SwitchInputComponent,
+        SliderInputComponent
+    ],
+    exports: [
+        EmailInputComponent,
+        FormComponent,
+        FormButtonsComponent,
+        FormFieldComponent,
+        FormFieldsComponent,
+        MultipleSelectInputComponent,
+        NumberInputComponent,
+        PasswordInputComponent,
+        SelectInputComponent,
+        ReactiveFormsModule,
+        TextInputComponent,
+        SliderInputComponent,
+        SwitchInputComponent
+    ],
+    imports: [
+        ActionsModule,
+        ButtonsModule,
+        CommonModule,
+        FormsModule,
+        IconsModule,
+        ReactiveFormsModule,
+        TagsModule,
+        ChipsModule,
+        FloatsModule
+    ]
 })
 export class FormModule {
 }
