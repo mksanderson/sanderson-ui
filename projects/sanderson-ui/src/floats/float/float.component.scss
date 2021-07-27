@@ -1,0 +1,48 @@
+:host {
+    position: relative;
+    width: 100%;
+
+    &:not(.active) {
+        .float {
+            display: none;
+        }
+    }
+
+    .float {
+        background: {
+            color: #404040;
+        }
+        border: {
+            radius: 4px;
+        }
+        left: 50%;
+        min: {
+            width: 50%;
+        }
+        position: absolute;
+        top: 100%;
+        transform: translateX(-50%);
+
+        &-content {
+            padding: 12px;
+            position: relative;
+
+            &:before {
+                border: {
+                    color: transparent transparent #404040 transparent;
+                    style: solid;
+                    width: 0 8px 8px 8px;
+                }
+                content: '';
+                height: 0;
+                left: 50%;
+                margin: {
+                    top: -10px;
+                }
+                position: absolute;
+                transform: translateX(-50%) translateY(-100%);
+                width: 0;
+            }
+        }
+    }
+}
