@@ -4,16 +4,16 @@ import {CardComponent} from './card/card.component';
 import {CardContentComponent} from './card/card-content/card-content.component';
 
 @NgModule({
-  declarations: [
-    CardComponent,
-    CardContentComponent,
-    CardsComponent
-  ],
-  exports: [
-    CardComponent,
-    CardContentComponent,
-    CardsComponent
-  ]
+    declarations: [
+        CardComponent,
+        CardContentComponent,
+        CardsComponent
+    ],
+    exports: [
+        CardComponent,
+        CardContentComponent,
+        CardsComponent
+    ]
 })
 export class CardsModule {
 }
