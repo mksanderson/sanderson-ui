@@ -15,5 +15,5 @@ import {NG_VALUE_ACCESSOR} from '@angular/forms';
   styleUrls: ['./email-input.component.scss']
 })
 export class EmailInputComponent extends AbstractInput {
-  public _value: string;
+  
 }

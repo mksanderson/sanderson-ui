@@ -63,3 +63,5 @@ export {PageService} from "./pages/page/page.service";
 export * from "./tags/tags.module";
 export * from "./tags/tag/tag.component";
 export * from "./tags/tags.component";
+
+export default{}

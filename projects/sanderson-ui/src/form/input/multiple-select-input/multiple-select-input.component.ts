@@ -16,7 +16,6 @@ import {AbstractInput} from '../input.abstract';
 })
 export class MultipleSelectInputComponent extends AbstractInput {
     @Input() public options: Array<any>;
-    public _value: Array<any>;
 
     constructor() {
         super();

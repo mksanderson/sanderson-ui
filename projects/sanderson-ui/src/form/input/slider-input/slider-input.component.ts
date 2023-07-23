@@ -18,5 +18,4 @@ export class SliderInputComponent extends AbstractInput {
   @Input() public max: number;
   @Input() public min: number;
   @Input() public step: number;
-  public _value: number;
 }

@@ -15,5 +15,5 @@ import {NG_VALUE_ACCESSOR} from '@angular/forms';
     templateUrl: './text-input.component.html'
 })
 export class TextInputComponent extends AbstractInput {
-    public _value: string;
+    
 }
