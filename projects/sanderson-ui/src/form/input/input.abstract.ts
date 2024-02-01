@@ -7,17 +7,17 @@ export class AbstractInput implements ControlValueAccessor {
     @Input() public placeholder: string;
     @Input() public required: boolean;
     @Input() public title: string;
-    public _value: any;
+    protected _value: any;
 
     /**
-     *
+     * Return the mutable input value
      */
     get value() {
         return this._value;
     }
 
     /**
-     *
+     * Set the value of the input
      * @param value
      */
     set value(value: any) {
@@ -27,19 +27,19 @@ export class AbstractInput implements ControlValueAccessor {
     }
 
     /**
-     *
+     * Default on change method skeleton
      */
     public onChange: any = () => {
     }
 
     /**
-     *
+     * Detection of interaction by user
      */
     public onTouched: any = () => {
     }
 
     /**
-     *
+     * Registering a change with the native control
      * @param fn
      */
     public registerOnChange(fn: any): void {
@@ -47,7 +47,7 @@ export class AbstractInput implements ControlValueAccessor {
     }
 
     /**
-     *
+     * Registering a user interaction with the native control
      * @param fn
      */
     public registerOnTouched(fn: any): void {
@@ -55,14 +55,14 @@ export class AbstractInput implements ControlValueAccessor {
     }
 
     /**
-     *
+     * Provide a disabled state for the control
      * @param isDisabled
      */
     public setDisabledState(isDisabled: boolean): void {
     }
 
     /**
-     *
+     * Write the value of the native control
      * @param value
      */
     public writeValue(value: any): void {
