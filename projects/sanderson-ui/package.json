@@ -1,6 +1,6 @@
 {
   "name": "sanderson-ui",
-  "version": "2.0.17",
+  "version": "2.0.19",
   "peerDependencies": {
     "@angular/common": "~16.1.6",
     "@angular/core": "~16.1.6",
