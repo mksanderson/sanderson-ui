@@ -12,7 +12,8 @@ import {NG_VALUE_ACCESSOR} from '@angular/forms';
     ],
     selector: 'sui-text-input',
     styleUrls: ['./text-input.component.scss'],
-    templateUrl: './text-input.component.html'
+    templateUrl: './text-input.component.html',
+    standalone: false
 })
 export class TextInputComponent extends AbstractInput {
     

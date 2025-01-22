@@ -1,12 +1,13 @@
 import {Component} from '@angular/core';
 
 @Component({
-  selector: 'sui-page-view',
-  styleUrls: [
-    './page-view.component.scss',
-    './page-view.theme.scss'
-  ],
-  templateUrl: './page-view.component.html'
+    selector: 'sui-page-view',
+    styleUrls: [
+        './page-view.component.scss',
+        './page-view.theme.scss'
+    ],
+    templateUrl: './page-view.component.html',
+    standalone: false
 })
 export class PageViewComponent {
 

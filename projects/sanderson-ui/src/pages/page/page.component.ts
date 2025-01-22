@@ -7,7 +7,8 @@ import {PageService} from './page.service';
         './page.component.scss',
         './page.theme.scss'
     ],
-    templateUrl: './page.component.html'
+    templateUrl: './page.component.html',
+    standalone: false
 })
 export class PageComponent {
     @Input() public loading: boolean;

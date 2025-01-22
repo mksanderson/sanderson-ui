@@ -7,7 +7,8 @@ import {LinkagesComponent} from '../../../linkages/linkages.component';
         './page-frame.component.scss',
         './page-frame.theme.scss'
     ],
-    templateUrl: './page-frame.component.html'
+    templateUrl: './page-frame.component.html',
+    standalone: false
 })
 export class PageFrameComponent {
     @ContentChildren(LinkagesComponent) @HostBinding('class.linkages') public linkages: LinkagesComponent;

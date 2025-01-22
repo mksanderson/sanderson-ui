@@ -3,7 +3,8 @@ import {FormControl, FormGroup} from '@angular/forms';
 
 @Component({
     selector: 'app-root',
-    templateUrl: './app.component.html'
+    templateUrl: './app.component.html',
+    standalone: false
 })
 export class AppComponent {
     public destinations: Array<any>;

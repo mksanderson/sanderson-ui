@@ -12,7 +12,8 @@ import {AbstractInput} from '../input.abstract';
     ],
     selector: 'sui-multiple-select-input',
     templateUrl: './multiple-select-input.component.html',
-    styleUrls: ['./multiple-select-input.component.scss']
+    styleUrls: ['./multiple-select-input.component.scss'],
+    standalone: false
 })
 export class MultipleSelectInputComponent extends AbstractInput {
     @Input() public options: Array<any>;
