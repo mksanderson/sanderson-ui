@@ -114,16 +114,16 @@
       "prefix": "lib",
       "architect": {
         "build": {
-          "builder": "@angular-devkit/build-ng-packagr:build",
+          "builder": "@angular-devkit/build-angular:ng-packagr",
           "options": {
             "tsConfig": "projects/ratify/tsconfig.lib.json",
             "project": "projects/ratify/ng-package.json"
           },
           "configurations": {
             "production": {
-              "project": "projects/ratify/ng-package.prod.json"
-            ,              "tsConfig": "projects/ratify/tsconfig.lib.prod.json"
-}
+              "project": "projects/ratify/ng-package.prod.json",
+              "tsConfig": "projects/ratify/tsconfig.lib.prod.json"
+            }
           }
         },
         "test": {
@@ -143,7 +143,7 @@
       "prefix": "lib",
       "architect": {
         "build": {
-          "builder": "@angular-devkit/build-ng-packagr:build",
+          "builder": "@angular-devkit/build-angular:ng-packagr",
           "options": {
             "tsConfig": "projects/sanderson-ui/tsconfig.lib.json",
             "project": "projects/sanderson-ui/ng-package.json"
